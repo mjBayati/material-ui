@@ -1,0 +1,15 @@
+
+
+
+@media (min-width: 900px) {
+    .indicatorWrapperProps {
+        margin-top: -7px !important;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .indicatorWrapperProps {
+        margin-top: 0 !important;
+    }
+}

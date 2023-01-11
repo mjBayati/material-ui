@@ -1,0 +1,14 @@
+
+
+.testimonialWrapperIcon {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonialWrapperIcon svg {
+    max-width: 58px;
+    max-height: 54px;
+    width: 100%;
+    height: 100%;
+    fill: #C1C4D6;
+}

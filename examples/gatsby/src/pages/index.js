@@ -9,21 +9,29 @@ import FullWidthContainer from '../components/container/FullWidthContainer';
 import WhyChooseSection from '../sections/why-choose-section/WhyChooseSection';
 import MapSection from '../sections/map-section/MapSection';
 import PagesDefaultLayout from '../components/layouts/PagesDefaultLayout';
+import PricingTableSection from '../sections/pricing-table-section/PricingTableSection';
+import mostPopularServicesData from '../sections/most-popular-services-sections/data/mostPopularServices.data';
+import MostPopularServicesSection from '../sections/most-popular-services-sections/MostPopularServicesSection';
 
 
 export default function Index() {
   const pt = { xl: 18.75, lg: 18.75, md: 15, sm: 12.5, xs: 12.5 };
   return (
     <PagesDefaultLayout>
-       {/* <PricingTableSection
+       <PricingTableSection
           pt={pt}
           pricingDataKey={'WINDOWS_VS_LINUX'}
           pageTitle={'Cloud VPS'}
-        /> */}
+        />
       <FullWidthContainer pt={pt}>
           <WhyChooseSection />
       </FullWidthContainer>
       <MapSection pt={pt} />
+      <MostPopularServicesSection
+          pt={pt}
+          title="Our Most Popular Services"
+          data={mostPopularServicesData}
+        />
       {/* <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Gatsby example

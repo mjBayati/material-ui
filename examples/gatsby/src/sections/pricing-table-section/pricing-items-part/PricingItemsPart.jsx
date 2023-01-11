@@ -7,31 +7,31 @@ import stringUtil from '../../../util/string.util';
 import togglableEnum from '../enum/togglable.enum';
 
 const PricingItemsPart = ({ selectedGroup, pricingItemsData, pageTitle }) => {
-  const getHiddenItems = () => {
-    return selectedGroup === togglableEnum.NOT_APPLICABLE ? [] : pricingItemsData.filter((pricingItem) => pricingItem.os.name !== selectedGroup);
-  }
+  // const getHiddenItems = () => {
+  //   return selectedGroup === togglableEnum.NOT_APPLICABLE ? [] : pricingItemsData.filter((pricingItem) => pricingItem.os.name !== selectedGroup);
+  // }
 
   const getPresentItems = () => {
     return selectedGroup === togglableEnum.NOT_APPLICABLE ? pricingItemsData : pricingItemsData.filter((pricingItem) => pricingItem.os.name === selectedGroup);
   }
 
   const [pricingItems, setPricingItems] = useState(getPresentItems());
-  const [hiddenPricingItems, setHiddenPricingItems] = useState(getHiddenItems());
+  // const [hiddenPricingItems, setHiddenPricingItems] = useState(getHiddenItems());
 
-  useEffect(() => {
-    setPricingItems(getPresentItems());
-    setHiddenPricingItems(getHiddenItems());
-  }, [selectedGroup]);
+  // useEffect(() => {
+  //   setPricingItems(getPresentItems());
+  //   setHiddenPricingItems(getHiddenItems());
+  // }, [selectedGroup]);
 
   return (
     <Grid container item xs={12} mt={2} spacing={2} justifyContent="center" alignItems="center">
       <Grid item xs={12}>
         <PricingItemsList pricingItems={pricingItems} pageTitle={pageTitle} />
-        {hiddenPricingItems.length !== 0 && (
+        {/* {hiddenPricingItems.length !== 0 && (
           <div style={{ display: 'none' }}>
               {stringUtil.serializeReactElement(<PricingItemsList pricingItems={hiddenPricingItems} pageTitle={pageTitle}/>)}
           </div>
-        )}
+        )} */}
       </Grid>
       {/* <Grid item xs={12} mt={2} display={'none'}>
         <ViewAllActionButton action={{ link: '/', text: 'View All' }} />
