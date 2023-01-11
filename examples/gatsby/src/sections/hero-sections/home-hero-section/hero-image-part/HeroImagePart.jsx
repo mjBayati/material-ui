@@ -1,10 +1,12 @@
 import Grid from '@mui/material/Grid';
 import React from 'react';
-import { PerformanceFeature } from 'components/performance-features/PerformanceFeatures';
+// import PerformanceFeature from '../../../../components/performance-features/PerformanceFeatures';
 import { StaticImage } from 'gatsby-plugin-image';
+// import HomeHero from '../../../../images/home-heroe-section/Home_hero.inline.svg'
 
 const HeroImage = () => {
   return (
+    // <HomeHero />
     <StaticImage
       src="../../../../images/home-heroe-section/Home_hero-min.webp"
       loading="eager"
@@ -19,9 +21,9 @@ const HeroImagePart = () => {
       <Grid item xs={12} display="flex" justifyContent="center">
         <HeroImage />
       </Grid>
-      <Grid item xs={12} mb={{ lg: -12, sm: -10, xs: 0 }}>
-        <PerformanceFeature />
-      </Grid>
+      {/* <Grid item xs={12} mb={{ lg: -12, sm: -10, xs: 0 }}> */}
+      {/* <PerformanceFeature /> */}
+      {/* </Grid> */}
     </Grid>
   );
 };

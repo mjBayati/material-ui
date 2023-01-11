@@ -15,17 +15,20 @@ import MostPopularServicesSection from '../sections/most-popular-services-sectio
 import TestimonialSection from '../sections/testimonial-section/TestimonialSection';
 import PricingCtaSection from '../sections/pricing-cta-section/PricingCtaSection';
 import PricingCtaTempData from '../sections/pricing-cta-section/data/pricingCtaDescription.data';
+import HomeHeroSection from '../sections/hero-sections/home-hero-section/HomeHeroSection';
 
 
 export default function Index() {
   const pt = { xl: 18.75, lg: 18.75, md: 15, sm: 12.5, xs: 12.5 };
   return (
     <PagesDefaultLayout>
+        <HomeHeroSection mt={{ lg: 0, md: 12, sm: 8, xs: 3 }} />
        {/* <PricingTableSection
           pt={pt}
           pricingDataKey={'WINDOWS_VS_LINUX'}
           pageTitle={'Cloud VPS'}
         /> */}
+
       <FullWidthContainer pt={pt}>
           <WhyChooseSection />
       </FullWidthContainer>
