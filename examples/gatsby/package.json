@@ -23,7 +23,8 @@
     "react-dom": "latest",
     "react-helmet": "latest",
     "react-slick": "^0.29.0",
-    "react-svg": "^15.1.18"
+    "react-svg": "^15.1.18",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "develop": "gatsby develop",
