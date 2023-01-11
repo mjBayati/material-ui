@@ -23,11 +23,11 @@ export default function Index() {
   return (
     <PagesDefaultLayout>
         <HomeHeroSection mt={{ lg: 0, md: 12, sm: 8, xs: 3 }} />
-       {/* <PricingTableSection
+       <PricingTableSection
           pt={pt}
           pricingDataKey={'WINDOWS_VS_LINUX'}
           pageTitle={'Cloud VPS'}
-        /> */}
+        />
 
       <FullWidthContainer pt={pt}>
           <WhyChooseSection />
