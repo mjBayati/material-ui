@@ -10,17 +10,21 @@
     "@emotion/react": "latest",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "latest",
     "gatsby": "latest",
+    "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-react-svg": "^3.3.0",
     "react": "latest",
     "react-dom": "latest",
-    "react-helmet": "latest"
+    "react-helmet": "latest",
+    "react-svg": "^15.1.18"
   },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
+    "serve": "gatsby build && gatsby serve",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   }
 }

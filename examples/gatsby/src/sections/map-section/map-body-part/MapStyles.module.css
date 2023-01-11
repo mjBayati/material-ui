@@ -1,0 +1,94 @@
+.map {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.map text {
+  cursor: pointer;
+}
+
+.map :global(.cls-7) {
+  cursor: default;
+}
+
+.map :global(#Count) {
+  -webkit-filter: drop-shadow(1px 2px 6px rgba(17, 20, 103, 0.12));
+  filter: drop-shadow(1px 2px 6px rgba(17, 20, 103, 0.12));
+}
+
+.map :global(.cls-13) {
+  stroke: #9c9ee7;
+  opacity: 1;
+  transform: scale(1);
+  fill: transparent;
+  animation: pulse2 3s infinite;
+  animation-delay: 1s;
+}
+
+.map :global(#Lon .cls-13) {
+  transform-origin: 45.8% 21.1%;
+}
+
+.map :global(#Ams .cls-13) {
+  transform-origin: 49.7% 21.9%;
+}
+
+.map :global(#Frank .cls-13) {
+  transform-origin: 51.1% 23%;
+}
+
+.map :global(#Sin .cls-13) {
+  transform-origin: 78.1% 48.9%;
+}
+
+.map :global(#New .cls-13) {
+  transform-origin: 28.1% 26.6%;
+}
+
+.map :global(#Wash .cls-13) {
+  transform-origin: 26.4% 28.4%;
+}
+
+.map :global(#Mia .cls-13) {
+  transform-origin: 22.9% 37.8%;
+}
+
+.map :global(#Dal .cls-13) {
+  transform-origin: 19.9% 33.4%;
+}
+
+.map :global(#Pho .cls-13) {
+  transform-origin: 15.2% 33.4%;
+}
+
+.map :global(#Chi .cls-13) {
+  transform-origin: 22.4% 24.3%;
+}
+
+.map :global(#Sea .cls-13) {
+  transform-origin: 14% 22.5%;
+}
+
+.map :global(#San .cls-13) {
+  transform-origin: 12.4% 29.2%;
+}
+
+.map :global(#Los .cls-13) {
+  transform-origin: 12.4% 32.3%;
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}

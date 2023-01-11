@@ -1,0 +1,9 @@
+.LoadMoreIcon:global(.true) {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.LoadMoreIcon:global(.false) {
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
