@@ -38,7 +38,7 @@ export default function Index() {
           title="Our Most Popular Services"
           data={mostPopularServicesData}
         />
-      {/* <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} /> */}
+      <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} />
       <PricingCtaSection pt={pt} data={PricingCtaTempData} />
 
       {/* <Box sx={{ my: 4 }}>
